@@ -2,3 +2,13 @@
     margin:0;
     padding:0;
 }
+
+#contact-div{
+    background-color: #343a40;
+    color:white;
+}
+
+#nav-menu{
+    background-color: #ff0000 !important;
+    color: white !important;
+}
