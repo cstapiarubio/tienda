@@ -12,3 +12,24 @@
     background-color: #ff0000 !important;
     color: white !important;
 }
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer p:last-child{
+    background-color: #343a40;
+}
+
+.icon{
+    color:white !important;
+}
+
+header .icon, footer .icon{
+    width: 2%;
+}
+
+header nav .icon{
+    width: 5%;
+}
