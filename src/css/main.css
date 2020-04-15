@@ -75,6 +75,7 @@ footer .icon{
 
 header nav .icon{
     width: 5%;
+}
 
 main{
     width: 1150px;
@@ -159,7 +160,26 @@ main{
     height: 177px;
 }
 
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer p:last-child{
+    background-color: #343a40;
+}
+
+#follow-us{
+    background-color: #fff;
+    color: #000
+}
+
 #follow-us img{
     width: 50px;
     margin: 8px;
 }
+
+#follow-us img:hover{
+    opacity: 0.7;
+}
+
