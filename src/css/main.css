@@ -13,7 +13,6 @@
     color: white !important;
 }
 
-<<<<<<< HEAD
 footer{
     background-color: black;
     color: white;
@@ -33,7 +32,7 @@ header .icon, footer .icon{
 
 header nav .icon{
     width: 5%;
-=======
+
 main{
     width: 1150px;
     margin: 0 auto;
@@ -120,5 +119,4 @@ main{
 #follow-us img{
     width: 50px;
     margin: 8px;
->>>>>>> 5e5c7e2630100af194461dae3a9bd9c597863fef
 }
