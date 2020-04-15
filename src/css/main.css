@@ -13,6 +13,49 @@
     color: white !important;
 }
 
+#icon, #logo{
+    display: inline-block;
+    width: 40%;
+    margin-left: 10%;
+}
+
+#icon img{
+    width: 8%;
+    padding: 10px;
+}
+
+#icon-search img{
+    width: 10%;
+    padding:5px;
+}
+
+#word{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 20%;
+}
+
+#word p{
+    padding:10px;
+}
+
+#icon-search form{
+    display: inline-block;
+}
+
+#icon-search{
+    display: inline-block;
+    width: 40%;
+    padding-left: 15%;
+}
+
+#logo img{
+    width: 40%;
+}
+
+
+
 footer{
     background-color: black;
     color: white;
@@ -26,7 +69,7 @@ footer p:last-child{
     color:white !important;
 }
 
-header .icon, footer .icon{
+footer .icon{
     width: 2%;
 }
 
