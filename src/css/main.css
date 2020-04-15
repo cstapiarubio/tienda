@@ -65,11 +65,11 @@ main{
 }
 
 .list-container a{
-    color: #000;
+    color: #212529;
 }
 
 .list-container a:hover{
-    color: #000;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -128,7 +128,8 @@ footer p:last-child{
 
 #follow-us{
     background-color: #fff;
-    color: #000
+    color: #212529;
+    padding-bottom: 18px;
 }
 
 #follow-us img{
