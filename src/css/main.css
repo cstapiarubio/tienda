@@ -13,6 +13,18 @@
     color: white !important;
 }
 
+.icon{
+    color:white !important;
+}
+
+header .icon, footer .icon{
+    width: 2%;
+}
+
+header nav .icon{
+    width: 5%;
+}
+
 main{
     width: 1150px;
     margin: 0 auto;
@@ -94,6 +106,20 @@ main{
 .most-sold img{
     width: 170px;
     height: 177px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer p:last-child{
+    background-color: #343a40;
+}
+
+#follow-us{
+    background-color: #fff;
+    color: #000
 }
 
 #follow-us img{
