@@ -13,6 +13,7 @@
     color: white !important;
 }
 
+<<<<<<< HEAD
 footer{
     background-color: black;
     color: white;
@@ -32,4 +33,92 @@ header .icon, footer .icon{
 
 header nav .icon{
     width: 5%;
+=======
+main{
+    width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main-section{
+
+    margin-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-section h3{
+    font-weight: 700;
+}
+
+.main-section hr{
+    width: 120px;
+    height: 7px;
+    margin: 15px auto 45px auto;
+    background-color: #f00;
+}
+
+.list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-container a{
+    color: #000;
+}
+
+.list-container a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.card{
+    padding: 13px 25px;
+    border-radius: 20px !important;
+}
+
+.card-description{
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.card-price{
+    color: #f00;
+}
+
+.card-stock{
+    margin-top: 10px;
+}
+
+.product{
+    width: 250px;
+}
+
+.product img{
+    width: 200px;
+    height: 215px;
+}
+
+.colection{
+    width: 200px;
+}
+.colection img{
+    width: 190px;
+    height: 200px;
+}
+
+.most-sold{
+    width: 220px;
+}
+
+.most-sold img{
+    width: 170px;
+    height: 177px;
+}
+
+#follow-us img{
+    width: 50px;
+    margin: 8px;
+>>>>>>> 5e5c7e2630100af194461dae3a9bd9c597863fef
 }
