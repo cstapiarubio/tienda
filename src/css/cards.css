@@ -1,0 +1,17 @@
+.card{
+    padding: 13px 25px;
+    border-radius: 20px !important;
+}
+
+.card-description{
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.card-price{
+    color: #f00;
+}
+
+.card-stock{
+    margin-top: 10px;
+}
