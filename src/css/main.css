@@ -232,3 +232,8 @@ main p{
 main img{
     width: 30%;
 }
+
+#map{
+    height: 500px;
+    width: 100%;
+}
