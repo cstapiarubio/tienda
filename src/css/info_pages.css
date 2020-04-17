@@ -1,0 +1,9 @@
+main h2{
+    color: red;
+    margin-bottom: 20px;
+}
+
+main p{
+    line-height: 40px;
+    font-weight: bolder;
+}
