@@ -1,6 +1,11 @@
 .card{
     padding: 13px 25px;
     border-radius: 20px !important;
+    overflow: hidden;
+}
+
+.card img{
+    transition: transform .6s ease;
 }
 
 .card-description{
