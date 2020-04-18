@@ -204,3 +204,36 @@ main{
     width: 170px;
     height: 177px;
 }
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer h6{
+    background-color: #343a40;
+}
+
+footer img{
+    margin:5px;
+}
+
+#follow-us{
+    background-color: #fff;
+    color: #212529;
+    padding-bottom: 18px;
+}
+
+#follow-us img{
+    width: 50px;
+    margin: 8px;
+}
+
+#follow-us img:hover{
+    opacity: 0.7;
+}
+
+#info-footer h6{
+ text-align: center;
+ font-weight: bolder;
+}
