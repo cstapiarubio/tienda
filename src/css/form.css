@@ -1,0 +1,13 @@
+h2{
+    text-align: center;
+}
+
+main{
+    width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+label{
+    font-weight: bolder;
+}
