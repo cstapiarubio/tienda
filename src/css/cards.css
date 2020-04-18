@@ -5,7 +5,7 @@
 }
 
 .card img{
-    transition: transform .6s ease;
+    transition: transform .6s ease-out;
 }
 
 .card-description{

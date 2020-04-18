@@ -32,6 +32,7 @@
 
 .most-sold{
     width: 220px;
+    transition: left .6s linear; 
 }
 
 .most-sold img{
