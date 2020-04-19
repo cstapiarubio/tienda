@@ -14,10 +14,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div id="logo">
+    <header id="search-div">
+            <div id="logo">
                 <a href="index.html"><img src="../src/img/logo.gif"></a>
-        </div>
+            </div>
+           <div id="icon-search">
+                <a>Perfil</a>
+                <a>Productos</a>
+                <a>Categorías & Subcategorías</a>
+                <a>Usuarios</a>
+           </div>
     </header>
     <main>
         <h2>CATEGORÍA</h2>
@@ -26,6 +32,20 @@
                 <label for="inputName">Nombre</label>
                 <input type="text" class="form-control" id="inputName" placeholder="Nombre">
             </div>
+        </form>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Seleccionar categoría</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Nueva categoría</option>
+                  <option>Insumos para comida</option>
+                  <option>Dulces y Snacks</option>
+                  <option>Bebidas y Jugos</option>
+                  <option>Congelados</option>
+                  <option>Belleza</option>
+
+                </select>
+              </div>
             <div class="form-group">
                 <label for="inputCreated">Fecha de registro</label>
                 <input type="text" class="form-control" id="inputCreated" placeholder="Fecha de registro"></input>

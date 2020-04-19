@@ -11,3 +11,14 @@ main{
 label{
     font-weight: bolder;
 }
+
+#icon-search a{
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+header{
+    background-color: #7b8188;
+    color:white;
+    margin-bottom: 20px;
+}
