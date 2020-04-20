@@ -12,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../src/js/form.js"></script>
 </head>
 <body>
     <header id="search-div">
@@ -26,13 +27,7 @@
            </div>
     </header>
     <main>
-        <h2>CATEGORÍA</h2>
-        <form>
-            <div class="form-group">
-                <label for="inputName">Nombre</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
-            </div>
-        </form>
+        <h2>CATEGORÍA & SUB-CATEGORÍA</h2>
         <form>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Seleccionar categoría</label>
@@ -43,16 +38,21 @@
                   <option>Bebidas y Jugos</option>
                   <option>Congelados</option>
                   <option>Belleza</option>
-
                 </select>
               </div>
-            <div class="form-group">
-                <label for="inputCreated">Fecha de registro</label>
-                <input type="text" class="form-control" id="inputCreated" placeholder="Fecha de registro"></input>
-              </div>
               <div class="form-group">
-                <label for="inputUpdated">Fecha de actualización</label>
-                <input type="text" class="form-control" id="inputUpdated" placeholder="Fecha de actualización"></input>
+                <label for="inputName">Nombre categoría</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Ingrese nombre de nueva categoría">
+            </div>
+            <label for="inputSubcategoria">Cantidad de subcategorías</label>
+            <div class="input-group mb-3">
+                <button type="button" class="btn btn-danger btn-number" id="minus">-</button>
+                <input type="number" class="form-control input-number" value="0" rows="">
+                <button type="button" class="btn btn-secondary btn-number" id="plus">+</button>
+            </div>
+            <div class="form-group">
+                <label for="inputNamesub">Nombre subcategoría</label>
+                <input type="text" class="form-control" id="inputNamesub" placeholder="Nombre de subcategoría"></input>
               </div>
             <button type="submit" class="btn btn-dark">Guardar</button>
           </form>
