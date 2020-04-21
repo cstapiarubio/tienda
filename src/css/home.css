@@ -1,6 +1,5 @@
 .list-container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -32,7 +31,10 @@
 
 .most-sold{
     width: 220px;
-    transition: left .6s linear; 
+}
+
+.most-sold[data-animation='yes']{
+    /*transition: left .6s linear;*/
 }
 
 .most-sold img{
