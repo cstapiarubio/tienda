@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('#minus').click(function () {
       var $input = $(this).parent().find('input');
       var count = parseInt($input.val()) - 1;
@@ -13,4 +13,12 @@ $(document).ready(function() {
       $input.change();
       return false;
     });
-  });
+  });*/
+
+  $(function(){
+    $('#add_sub').on('click',function(){
+        var r= $('<label for="inputNamesub">Nombre subcategoría</label>' +
+        '<input type="text" class="form-control" id="inputNamesub" placeholder="Nombre de subcategoría"></input>');
+        $("#sub").append(r);
+    });
+});
