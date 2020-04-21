@@ -1,6 +1,7 @@
 .list-container{
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .list-container a{
@@ -31,13 +32,96 @@
 
 .most-sold{
     width: 220px;
-}
-
-.most-sold[data-animation='yes']{
-    /*transition: left .6s linear;*/
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .most-sold img{
     width: 170px;
     height: 177px;
+}
+
+#most-sold1{
+    animation-name: last-card1;  
+}
+
+#most-sold2{
+    animation-name: last-card2;
+}
+
+#most-sold3{
+    animation-name: last-card3;
+}
+
+#most-sold4{
+    animation-name: last-card4;
+}
+
+#most-sold5{
+    animation-name: last-card5;
+}
+
+@keyframes last-card1{
+    0%  {left: 0}
+    10% {left: -233px; top: 0}
+    10.1% {left: -233px; top: 500px}
+    10.2% {left: 1162px; top: 500px}
+    10.3% {left: 1162px; top: 0}
+    20% {left: 932px;}
+    40% {left: 699px}
+    60% {left: 466px}
+    80% {left: 233px}
+    100% {left: 0}
+}
+
+@keyframes last-card2{
+    0%  {left: 0}
+    20%  {left: -233px}
+    30% {left: -466px; top: 0}
+    30.1% {left: -466px; top: 500px}
+    30.2% {left: 932px; top: 500px}
+    30.3% {left: 932px; top: 0}
+    40% {left: 699px;}
+    60% {left: 466px}
+    80% {left: 233px}
+    100% {left: 0}
+}
+
+@keyframes last-card3{
+    0%  {left: 0}
+    20% {left: -233px}
+    40% {left: -466px}
+    50% {left: -699px; top: 0}
+    50.1% {left: -699px; top: 500px}
+    50.2% {left: 699px; top: 500px}
+    50.2% {left: 699px; top: 0}
+    60% {left: 466px}
+    80% {left: 233px}
+    100% {left: 0}
+}
+
+@keyframes last-card4{
+    0%  {left: 0}
+    20% {left: -233px}
+    40% {left: -466px}
+    60% {left: -699px;}
+    70% {left: -932px; top: 0}
+    70.1% {left: -932px; top: 500px}
+    70.2% {left: 466px; top: 500px}
+    70.3% {left: 466px; top: 0}
+    80% {left: 233px}
+    100% {left: 0}
+}
+
+@keyframes last-card5{
+    0%  {left: 0}
+    20% {left: -233px}
+    40% {left: -466px}
+    60% {left: -699px;}
+    80% {left: -932px;}
+    90% {left: -1162px; top: 0}
+    90.1% {left: -1162px; top: 500px}
+    90.2% {left: 233px; top: 500px}
+    90.3% {left: 233px; top: 0}
+    100% {left: 0}
 }
