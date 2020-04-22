@@ -24,6 +24,10 @@ a{
     color: #fff !important;
 }
 
+#search-div{
+    background-color: white;
+}
+
 #icon, #logo{
     display: inline-block;
     width: 40%;
@@ -73,6 +77,19 @@ a{
 
 header nav .icon{
     margin-left: 10%;
+}
+
+header{
+    width: 100%; 
+	left: 0; 
+	top: 0; 
+    position: fixed;
+    z-index: 1;
+}
+
+body{
+    padding-top: 250px;
+    z-index: 0;
 }
 
 /* footer */
