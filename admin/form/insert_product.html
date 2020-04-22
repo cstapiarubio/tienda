@@ -3,59 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
+    <title>Agregar Producto</title>
+    <link rel="icon" href="../../src/img/cat.jpg">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../src/css/main.css">
-    <link rel="stylesheet" type="text/css" href="../src/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../src/js/form.js"></script>
+    <script src="../../src/js/form.js"></script>
 </head>
 <body>
     <header id="search-div">
-            <div id="logo">
-                <a href="index.html"><img src="../src/img/logo.gif"></a>
-            </div>
-           <div id="icon-search">
-                <a>Perfil</a>
-                <a>Productos</a>
-                <a>Categorías & Subcategorías</a>
-                <a>Usuarios</a>
-           </div>
+        <div id="logo">
+            <a href="../../index.html"><img src="../../src/img/logo.gif"></a>
+        </div>
+       <div id="icon-search">
+            <a>Perfil</a>
+            <a>Productos</a>
+            <a>Categorías & Subcategorías</a>
+            <a>Usuarios</a>
+       </div>
     </header>
     <main>
-        <h2>USUARIO</h2>
+        <h2>PRODUCTO</h2>
         <form>
             <div class="form-group">
                 <label for="inputName">Nombre</label>
                 <input type="text" class="form-control" id="inputName" placeholder="Nombre">
             </div>
             <div class="form-group">
-                <label for="inputLastname">Apellido</label>
-                <input type="text" class="form-control" id="inputLastname" placeholder="Apellido">
+                <label for="inputCapacity">Capacidad</label>
+                <input type="number" class="form-control" id="inputCapacity" placeholder="Capacidad">
             </div>
             <div class="form-group">
-                <label for="inputRut">RUT</label>
-                <input type="text" class="form-control" id="inputRut" placeholder="RUT">
+                <label for="inputUnidad">Unidad de medida</label>
+                <input type="text" class="form-control" id="inputUnidad" placeholder="Unidad de medida">
             </div>
             <div class="form-group">
-              <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                <label for="inputDescription">Descripción</label>
+                <textarea class="form-control" id="inputDescription" rows="3"></textarea>
+              </div>
+            <div class="form-group">
+                <label for="inputCant">Cantidad</label>
+                <input type="number" class="form-control" id="inputCant" placeholder="Cantidad">
             </div>
             <div class="form-group">
-                <label for="inputPhone">Teléfono</label>
-                <input type="tel" class="form-control" id="inputPhone" placeholder="Ingrese su teléfono">
+              <label for="inputPrecio">Precio</label>
+              <input type="number" class="form-control" id="inputPrecio" placeholder="Precio">
             </div>
             <div class="form-group">
-                <label for="inputPassword">Password</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <label for="inputJerarquia">Jerarquía</label>
-              <input type="text" class="form-control" id="inputJerarquia" placeholder="Jerarquía"></input>
+                <label for="inputRuta">Ruta de imagen</label>
+                <input type="text" class="form-control" id="inputRuta" placeholder="Ruta de imagen">
             </div>
             <button type="submit" class="btn btn-dark">Guardar</button>
           </form>

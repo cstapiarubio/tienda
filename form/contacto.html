@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
+    <title>Contacto</title>
+    <link rel="icon" href="../src/img/cat.jpg">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/info_pages.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="../src/js/main.js"></script>
 </head>
 <body>
@@ -18,27 +21,27 @@
         <div id="contact-div">
             <div id="icon"><a href=""><img class="icon" src="../src/img/icons/facebook.png"></a><a href=""><img class="icon" src="../src/img/icons/instagram.png"></a></div>
             <div id="word">
-                <a href="blog.html"><p>Blog</p></a>
-                <a href="how_buy.html"><p>¿Cómo comprar?</p></a>
+                <a href="../info/blog.html"><p>Blog</p></a>
+                <a href="../info/how_buy.html"><p>¿Cómo comprar?</p></a>
                 <a><p>Empresa</p></a>
             </div>
         </div>
         <div id="search-div">
             <div id="logo">
-                <a href="index.html"><img src="../src/img/logo.gif"></a>
+                <a href="../index.html"><img src="../src/img/logo.gif"></a>
             </div>
            <div id="icon-search">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2 rounded" type="search" placeholder="Buscar" aria-label="Search">
                 </form>
                 <a><img class="icon" src="../src/img/icons/research.png"></a>
-                <a><img class="icon" src="../src/img/icons/user.png"></a>
+                <a href="../form/login.html" target="_blank"><img class="icon" src="../src/img/icons/user.png"></a>
                 <a><img class="icon" src="../src/img/icons/market.png"></a>
            </div>
         </div>
             
         <nav id="nav-menu" class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html"><img class="icon" src="../src/img/icons/home-run.png"></a>
+            <a class="navbar-brand" href="../index.html"><img class="icon" src="../src/img/icons/home-run.png"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -138,7 +141,31 @@
     </header>
 
     <main>
-        
+        <h2>Contacto</h2>
+        <form>
+            <div class="form-group">
+                <label for="inputName">Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre completo">
+            </div>
+            <div class="form-group">
+                <label for="inputRut">RUT</label>
+                <input type="text" class="form-control" id="inputRut" placeholder="Ingrese su RUT">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+            </div>
+            <div class="form-group">
+                <label for="inputPhone">Teléfono</label>
+                <input type="tel" class="form-control" id="inputPhone" placeholder="Ingrese su teléfono">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Comentario</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LfyqOoUAAAAAFJmrf4iilzZZbwW3IsFI1oePrHR"></div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+          </form>
     </main>
 
     <footer>
@@ -158,11 +185,11 @@
             <div class="info">
                 <h2>INFO ADICIONAL</h2>
                 <ul>
-                    <a href="quienes_somos.html"><li>Quiénes somos</li></a>
-                    <a href="sucursal.html"><li>Sucursales</li></a>
+                    <a href="../info/quienes_somos.html"><li>Quiénes somos</li></a>
+                    <a href="../info/sucursal.html"><li>Sucursales</li></a>
                     <a href="contacto.html"><li>Contacto</li></a>
-                    <a href="how_buy.html"><li>¿Cómo comprar?</li></a>
-                    <a href="condiciones.html"><li>Condiciones</li></a>
+                    <a href="../info/how_buy.html"><li>¿Cómo comprar?</li></a>
+                    <a href="../info/condiciones.html"><li>Condiciones</li></a>
                 </ul>     
             </div>
             <div class="info"> 

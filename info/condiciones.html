@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
+    <title>Condiciones</title>
+    <link rel="icon" href="../src/img/cat.jpg">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../src/css/main.css">
     <link rel="stylesheet" type="text/css" href="../src/css/info_pages.css">
-    <link rel="stylesheet" type="text/css" href="../src/css/sucursal.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../src/js/main.js"></script>
 </head>
 <body>
     <header>
         <div id="contact-div">
-            <div id="icon"><a href=""><img class="icon" src="../src/img/icons/facebook.png"></a><a href=""><img class="icon" src="../src/img/icons/instagram.png"></a></div>
+            <div id="icon"><a><img class="icon" src="../src/img/icons/facebook.png"></a> <a><img class="icon" src="../src/img/icons/instagram.png"></a></div>
             <div id="word">
                 <a href="blog.html"><p>Blog</p></a>
                 <a href="how_buy.html"><p>¿Cómo comprar?</p></a>
@@ -26,20 +27,20 @@
         </div>
         <div id="search-div">
             <div id="logo">
-                <a href="index.html"><img src="../src/img/logo.gif"></a>
+                <a href="../index.html"><img src="../src/img/logo.gif"></a>
             </div>
            <div id="icon-search">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2 rounded" type="search" placeholder="Buscar" aria-label="Search">
                 </form>
                 <a><img class="icon" src="../src/img/icons/research.png"></a>
-                <a><img class="icon" src="../src/img/icons/user.png"></a>
+                <a href="../form/login.html" target="_blank"><img class="icon" src="../src/img/icons/user.png"></a>
                 <a><img class="icon" src="../src/img/icons/market.png"></a>
            </div>
         </div>
             
         <nav id="nav-menu" class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html"><img class="icon" src="../src/img/icons/home-run.png"></a>
+            <a class="navbar-brand" href="../index.html"><img class="icon" src="../src/img/icons/home-run.png"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -139,11 +140,13 @@
     </header>
 
     <main>
-        <h2>Sucursales</h2>
-        <p>Casa matriz: Antonia Lopez de Bello # 297, Barrio Patronato, Recoleta - Santiago.</p>
-        <div id="map"></div>
-        <p>Sucursal: Conyancura #2265, Providencia - Santiago.</p>
-        <div id="map2"></div>
+        <h2>Condiciones</h2>
+        <h5>TIEMPOS DE ENTREGA</h5>
+        <p>El plazo de entrega de los despacho será de hasta 10 días hábiles posteriores al pago.</p>
+            
+        <h5>ENTREGA DE PEDIDOS</h5> 
+        <p>Los pedidos se envían a través del siguiente  operador logístico (Starken, Varmontt, chile express, chile lindo, correos de chile, etc), quien realizara la entrega en la dirección indicada por el cliente. Cuando China House Market entrega un pedido a  el operador logístico, envía el código de seguimiento al cliente, con la finalidad que pueda hacer seguimiento de la compra. En el caso que el operador logístico no pueda realizar la entrega por factores ajenos a ellos (ej. No hay quien reciba el pedido en el domicilio indicado, dirección insuficiente, desconocido en domicilio, entre otros), el pedido podría ser devuelto a China House Market y se programará un reenvío del pedido, lo cual implica un cambio en la fecha de entrega y un costo extra para el cliente.
+            El costo y tiempo de envío se cotizan directamente con la empresa de transporte.</p>
     </main>
 
     <footer>
@@ -165,7 +168,7 @@
                 <ul>
                     <a href="quienes_somos.html"><li>Quiénes somos</li></a>
                     <a href="sucursal.html"><li>Sucursales</li></a>
-                    <a href="contacto.html"><li>Contacto</li></a>
+                    <a href="../form/contacto.html"><li>Contacto</li></a>
                     <a href="how_buy.html"><li>¿Cómo comprar?</li></a>
                     <a href="condiciones.html"><li>Condiciones</li></a>
                 </ul>     
@@ -187,7 +190,5 @@
             <h6>China House Market <img class="icon" src="../src/img/icons/copyright.png"> 2020 ¿Te gusta mi tienda? Yo vendo con Bsale</h6>
         </div>   
     </footer>
-    <script src="../src/js/sucursal.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjItEqPS_iVLc8w4vfpcgXWLuSoQfk2Z0&callback=initMap" type="text/javascript"></script>
-    </body>
+</body>
 </html>
