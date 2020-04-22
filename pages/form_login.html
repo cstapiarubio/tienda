@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/form.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../src/js/form.js"></script>
+</head>
+<body>
+    <header>
+            <a id="logo-wrapper" href="index.html"><img src="../src/img/logo.gif"></a>
+    </header>
+    <main>
+        <!-- Login -->
+        <h2>Iniciar Sesión</h2>
+        <form action="" id="login-form" class="container">
+            <div class="form-group">
+                <label for="email-login">Correo Electrónico</label>
+                <input type="email" id="email-login" class="form-control" placeholder="usuario@dominio">
+            </div>
+            <div class="form-group">
+                <label for="password-login">Contraseña</label>
+                <input type="text" id="password-login" class="form-control" placeholder="Contraseña">
+            </div>
+            <a href="#">Olvidé mi Contraseña</a>
+            <div class="form-group custom-control custom-checkbox">               
+                <input type="checkbox" id="keep-active-account" class="custom-control-input">
+                <label for="keep-active-account" class="custom-control-label">Mantener Sesión Activa</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+        
+        <!-- Register -->
+        <h2>¿Eres Nuevo?</br>Crea una cuenta</h2>
+        <form action="" id="register-form" class="container">
+            <div class="form-group">
+                <label for="email-register">Correo Electrónico</label>
+                <input type="email" id="email-register" class="form-control" placeholder="usuario@dominio">
+            </div>
+            <div class="form-group">
+                <label for="password-register">Contraseña</label>
+                <input type="text" id="password-register" class="form-control" placeholder="Contraseña">
+            </div>
+            <div class="form-group">
+                <label for="password-register">Repetir Contraseña</label>
+                <input type="text" id="password-repeat-register" class="form-control" placeholder="Contraseña">
+            </div>
+            <div class="form-group">
+                <label for="name-register">Nombre</label>
+                <input type="text" id="name-register" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="surname-register">Apellido</label>
+                <input type="text" id="surname-register" class="form-control" placeholder="Apellido">
+            </div>
+            <div class="form-group">
+                <label for="dni-register">Documento de Identidad</label>
+                <input type="text" id="dni-register" class="form-control" placeholder="Documento de Identidad">
+            </div>
+            <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+        </form>
+    </main>
+</body>
+</html>

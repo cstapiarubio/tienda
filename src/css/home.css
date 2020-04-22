@@ -41,6 +41,8 @@
     height: 177px;
 }
 
+/* Animacion de Carrusel Productos más vendidos */
+
 #most-sold1{
     animation-name: last-card1;  
 }
