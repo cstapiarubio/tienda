@@ -1,4 +1,4 @@
-/*$(document).ready(function() {
+$(document).ready(function() {
     $('#minus').click(function () {
       var $input = $(this).parent().find('input');
       var count = parseInt($input.val()) - 1;
@@ -13,7 +13,7 @@
       $input.change();
       return false;
     });
-  });*/
+  });
 
   $(function(){
     $('#add_sub').on('click',function(){
