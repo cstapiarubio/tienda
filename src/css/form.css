@@ -27,9 +27,3 @@ header{
     padding: 1px 15px 3px 2px; 
     border-radius:50px;
 }
-
-/* form_login */
-.custom-control-label{
-    font-weight: 500;
-    cursor: pointer;
-}

@@ -1,0 +1,38 @@
+#login-main{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#login-main h2{
+    color: #999;
+}
+
+main form{
+    border: 1px solid #999;
+    border-radius: 25px;
+    padding: 25px 40px !important;
+}
+
+#login-form h2{
+    margin-bottom: 53px;
+}
+
+#register-form h2{
+    margin-bottom: 15px;
+}
+
+.custom-control-label{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#lost-password-link{
+    display: block;
+    text-align: center;
+}
+
+button{
+    display: block !important;
+    margin: 30px auto;
+    padding: 8px 35px !important;
+}

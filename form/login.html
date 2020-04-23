@@ -9,20 +9,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../src/css/main.css">
     <link rel="stylesheet" type="text/css" href="../src/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/login.css">
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../src/js/form.js"></script>
+    <script src="../src/js/main.js"></script>
 </head>
 <body>
     <header>
-            <a id="logo-wrapper" href="../index.html"><img src="../src/img/logo.gif"></a>
+        <div id="contact-div">
+            <div id="icon"><a href=""><img class="icon" src="../src/img/icons/facebook.png"></a><a href=""><img class="icon" src="../src/img/icons/instagram.png"></a></div>
+            <div id="word">
+                <a href="../info/blog.html"><p>Blog</p></a>
+                <a href="../info/how_buy.html"><p>¿Cómo comprar?</p></a>
+                <a><p>Empresa</p></a>
+            </div>
+        </div>
+        <div id="search-div">
+            <div id="logo">
+                <a href="../index.html"><img src="../src/img/logo.gif"></a>
+            </div>
+        </div>
     </header>
-    <main>
+    <main id="login-main">
         <!-- Login -->
-        <h2>Iniciar Sesión</h2>
         <form action="" id="login-form" class="container">
+            <h2>Iniciar Sesión</h2>
             <div class="form-group">
                 <label for="email-login">Correo Electrónico</label>
                 <input type="email" id="email-login" class="form-control" placeholder="usuario@dominio">
@@ -31,17 +44,17 @@
                 <label for="password-login">Contraseña</label>
                 <input type="text" id="password-login" class="form-control" placeholder="Contraseña">
             </div>
-            <a href="#">Olvidé mi Contraseña</a>
             <div class="form-group custom-control custom-checkbox">               
                 <input type="checkbox" id="keep-active-account" class="custom-control-input">
                 <label for="keep-active-account" class="custom-control-label">Mantener Sesión Activa</label>
             </div>
+            <a href="#" id="lost-password-link">Olvidé mi Contraseña</a>
             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
         </form>
         
         <!-- Register -->
-        <h2>¿Eres Nuevo?</br>Crea una cuenta</h2>
         <form action="" id="register-form" class="container">
+            <h2>¿Eres Nuevo?</br>Crea una cuenta</h2>
             <div class="form-group">
                 <label for="email-register">Correo Electrónico</label>
                 <input type="email" id="email-register" class="form-control" placeholder="usuario@dominio">
@@ -69,5 +82,46 @@
             <button type="submit" class="btn btn-primary">Crear Cuenta</button>
         </form>
     </main>
+    <footer>
+        <!-- Siguenos -->
+        <section id="follow-us" class="main-section">
+            <div id="follow-us-title-wrapper">
+                <h3 id="follow-us-title">Siguenos</h3>
+                <hr/>
+            </div>
+            <div id="follow-us-list" class="center-container">
+                <a href="#"><img src="../src/img/icons/facebook.png" alt="Icono de Fecebook"></a>
+                <a href="#"><img src="../src/img/icons/instagram.png" alt="Icono de Instagram"></a>
+            </div>
+        </section>
+
+        <div id="info-footer">
+            <div class="info">
+                <h2>INFO ADICIONAL</h2>
+                <ul>
+                    <a href="../info/quienes_somos.html"><li>Quiénes somos</li></a>
+                    <a href="../info/sucursal.html"><li>Sucursales</li></a>
+                    <a href="contacto.html"><li>Contacto</li></a>
+                    <a href="../info/how_buy.html"><li>¿Cómo comprar?</li></a>
+                    <a href="../info/condiciones.html"><li>Condiciones</li></a>
+                </ul>     
+            </div>
+            <div class="info"> 
+                <h2>China House Market</h2>
+                <p>TODOS LOS SABORES Y DELICIAS AHORA EN CHILE</p>
+            </div>
+            <div class="info">  
+                <h2>CONTÁCTANOS</h2>
+                <ul>
+                    <li><img class="icon" src="../src/img/icons/phone.png">+56227350854</li>
+                    <li><img class="icon" src="../src/img/icons/phone.png">+56222336863</li>
+                    <li><img class="icon" src="../src/img/icons/mail.png">wonton.ltda@gmail.com</li>
+                    <a><li><img class="icon" src="../src/img/icons/pin.png">Antonia López de Bello 297, Recoleta</li></a>
+                    <a><li><img class="icon" src="../src/img/icons/pin.png">Sucursal: Coyancura 2265, Providencia</li></a>
+                </ul>  
+            </div>
+            <h6>China House Market <img class="icon" src="../src/img/icons/copyright.png"> 2020 ¿Te gusta mi tienda? Yo vendo con Bsale</h6>
+        </div> 
+    </footer>
 </body>
 </html>
