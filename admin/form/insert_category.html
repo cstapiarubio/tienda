@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Categoría</title>
     <link rel="icon" href="../../src/img/cat.jpg">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../../src/css/form.css">
     <link rel="stylesheet" type="text/css" href="../../src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/form.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,48 +15,50 @@
     <script src="../../src/js/form.js"></script>
 </head>
 <body>
-    <header id="search-div">
-            <div id="logo">
-                <a href="../../index.html"><img src="../../src/img/logo.gif"></a>
+    <div class="row">
+        <header class="col-2" id="search-div">
+                <div id="logo">
+                    <a href="../../index.html"><img src="../../src/img/logo.gif"></a>
+                </div>
+            <div id="icon-search">
+                    <a>Perfil</a>
+                    <a>Productos</a>
+                    <a>Categorías & Subcategorías</a>
+                    <a>Usuarios</a>
             </div>
-           <div id="icon-search">
-                <a>Perfil</a>
-                <a>Productos</a>
-                <a>Categorías & Subcategorías</a>
-                <a>Usuarios</a>
-           </div>
-    </header>
-    <main>
-        <h2>CATEGORÍA & SUB-CATEGORÍA</h2>
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Seleccionar categoría</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Nueva categoría</option>
-                  <option>Insumos para comida</option>
-                  <option>Dulces y Snacks</option>
-                  <option>Bebidas y Jugos</option>
-                  <option>Congelados</option>
-                  <option>Belleza</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="inputName">Nombre categoría</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Ingrese nombre de nueva categoría">
-            </div>
-            <label for="inputSubcategoria">Cantidad de subcategorías</label>
-            <div class="input-group mb-3">
-                <button type="button" class="btn btn-danger btn-number" id="minus">-</button>
-                <input type="number" class="form-control input-number" value="0" rows="">
-                <button type="button" class="btn btn-secondary btn-number" id="plus">+</button>
-            </div>
-            <div class="form-group" id="sub">
-                <label for="inputNamesub">Nombre subcategoría</label>
-                <input type="text" class="form-control" id="inputNamesub" placeholder="Nombre de subcategoría"></input>
-            </div>
-            <a class="btn icon-btn btn-success" id="add_sub" href="#"><span class="glyphicon text-success">+</span>Añadir</a>
-            <button type="submit" class="btn btn-dark">Guardar</button>
-          </form>
-    </main>
+        </header>
+        <main class="col-10">
+            <h2>CATEGORÍA & SUB-CATEGORÍA</h2>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Seleccionar categoría</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Nueva categoría</option>
+                    <option>Insumos para comida</option>
+                    <option>Dulces y Snacks</option>
+                    <option>Bebidas y Jugos</option>
+                    <option>Congelados</option>
+                    <option>Belleza</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inputName">Nombre categoría</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Ingrese nombre de nueva categoría">
+                </div>
+                <label for="inputSubcategoria">Cantidad de subcategorías</label>
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-danger btn-number" id="minus">-</button>
+                    <input type="number" class="form-control input-number" value="0" rows="">
+                    <button type="button" class="btn btn-secondary btn-number" id="plus">+</button>
+                </div>
+                <div class="form-group" id="sub">
+                    <label for="inputNamesub">Nombre subcategoría</label>
+                    <input type="text" class="form-control" id="inputNamesub" placeholder="Nombre de subcategoría"></input>
+                </div>
+                <a class="btn icon-btn btn-success" id="add_sub" href="#"><span class="glyphicon text-success">+</span>Añadir</a>
+                <button type="submit" class="btn btn-dark">Guardar</button>
+            </form>
+        </main>
+    </div>
 </body>
 </html>
