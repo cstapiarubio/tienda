@@ -92,6 +92,10 @@ body{
     z-index: 0;
 }
 
+.dropdown-menu, .dropdown-item:hover{
+    background-color: red;
+  }
+
 /* footer */
 
 footer .icon{
