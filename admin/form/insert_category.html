@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Categoría</title>
     <link rel="icon" href="../../src/img/cat.jpg">
-    <link rel="stylesheet" type="text/css" href="../../src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/admin.css">
     <link rel="stylesheet" type="text/css" href="../../src/css/form.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
@@ -15,18 +15,28 @@
     <script src="../../src/js/form.js"></script>
 </head>
 <body>
+    <header id="logo">
+            <a href="../../index.html"><img src="../../src/img/logo.gif"></a>
+    </header>
     <div class="row">
-        <header class="col-2" id="search-div">
-                <div id="logo">
-                    <a href="../../index.html"><img src="../../src/img/logo.gif"></a>
-                </div>
-            <div id="icon-search">
-                    <a>Perfil</a>
-                    <a>Productos</a>
-                    <a>Categorías & Subcategorías</a>
-                    <a>Usuarios</a>
-            </div>
-        </header>
+        <div class="col-2" id="search-div">
+            <a>Perfil</a>
+            <a>Productos</a>
+            <ul>
+                <li><a>Consultar</a></li>
+                <li><a href="">Agregar</a></li>
+            </ul>
+            <a>Categorías & Subcategorías</a>
+            <ul>
+                <li><a>Consultar</a></li>
+                <li><a href="">Agregar</a></li>
+            </ul>
+            <a>Usuarios</a>
+            <ul>
+                <li><a>Consultar</a></li>
+                <li><a href="">Agregar</a></li>
+            </ul>
+        </div>
         <main class="col-10">
             <h2>CATEGORÍA & SUB-CATEGORÍA</h2>
             <form>
@@ -45,16 +55,7 @@
                     <label for="inputName">Nombre categoría</label>
                     <input type="text" class="form-control" id="inputName" placeholder="Ingrese nombre de nueva categoría">
                 </div>
-                <label for="inputSubcategoria">Cantidad de subcategorías</label>
-                <div class="input-group mb-3">
-                    <button type="button" class="btn btn-danger btn-number" id="minus">-</button>
-                    <input type="number" class="form-control input-number" value="0" rows="">
-                    <button type="button" class="btn btn-secondary btn-number" id="plus">+</button>
-                </div>
-                <div class="form-group" id="sub">
-                    <label for="inputNamesub">Nombre subcategoría</label>
-                    <input type="text" class="form-control" id="inputNamesub" placeholder="Nombre de subcategoría"></input>
-                </div>
+                <div class="form-group" id="sub"></div>
                 <a class="btn icon-btn btn-success" id="add_sub" href="#"><span class="glyphicon text-success">+</span>Añadir</a>
                 <button type="submit" class="btn btn-dark">Guardar</button>
             </form>
