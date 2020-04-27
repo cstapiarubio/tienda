@@ -6,14 +6,14 @@ label{
     font-weight: bolder;
 }
 
-.glyphicon { 
+.glyphicon{ 
     padding:5px; 
     background:#ffffff; 
     margin-right:4px; 
     border-radius: 50%;
 }
 
-.icon-btn { 
+.icon-btn{ 
     padding: 1px 15px 3px 2px; 
     border-radius:50px;
 }
@@ -22,3 +22,4 @@ button{
     display: block !important;
     margin-left: 500px !important;
 }
+

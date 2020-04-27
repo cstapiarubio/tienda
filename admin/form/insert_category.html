@@ -18,25 +18,46 @@
     <header id="logo">
             <a href="../../index.html"><img src="../../src/img/logo.gif"></a>
     </header>
+   
     <div class="row">
-        <div class="col-2" id="search-div">
-            <a>Perfil</a>
-            <a>Productos</a>
-            <ul>
-                <li><a>Consultar</a></li>
-                <li><a href="">Agregar</a></li>
-            </ul>
-            <a>Categorías & Subcategorías</a>
-            <ul>
-                <li><a>Consultar</a></li>
-                <li><a href="">Agregar</a></li>
-            </ul>
-            <a>Usuarios</a>
-            <ul>
-                <li><a>Consultar</a></li>
-                <li><a href="">Agregar</a></li>
-            </ul>
+        <div class="col-2 dropdown" id="search-div">
+                <div class="nav flex-column" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <i class="fas fa-id-badge"></i>
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>  
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Productos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Consultar</a>
+                            <a class="dropdown-item" href="#">Agregar</a>
+                        </div>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorías & Subcategorías
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Consultar</a>
+                            <a class="dropdown-item" href="#">Agregar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Usuarios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Consultar</a>
+                            <a class="dropdown-item" href="#">Agregar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
+        
         <main class="col-10">
             <h2>CATEGORÍA & SUB-CATEGORÍA</h2>
             <form>
