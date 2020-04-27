@@ -1,4 +1,4 @@
-/* Iniciador */
+/* I N I C I A D O R */
 
 *{
     margin:0;
@@ -9,23 +9,34 @@ a{
     text-decoration: none;
 }
 
-/* header */
+/* H E A D E R */
+
+header{
+    width: 100%; 
+	left: 0; 
+	top: 0; 
+    position: fixed;
+    z-index:99;
+}
+
+/* contact-div: Seccion en Gris; para las redes sociales */
 
 #contact-div{
     background-color: #343a40;
-    color:white;
+    color:#fff;
 }
 
-#nav-menu{
-    background-color: #ff0000 !important;
+#icon .icon{
+    font-size: 1.2em;
+    margin: 0 8px;
+    padding: 3px 7px;
+    color:#fff;
+    background-color: #666;
+    border-radius: 40px;
 }
 
-#nav-menu a{
-    color: #fff !important;
-}
-
-#search-div{
-    background-color: white;
+#icon .icon:hover{
+    background-color:#3b5998;
 }
 
 #icon, #logo{
@@ -34,14 +45,66 @@ a{
     margin-left: 10%;
 }
 
-#icon img{
-    width: 8%;
-    padding: 10px;
+/* search-div: Seccion en Blanco; para la busqueda, logo y algunos iconos */
+#search-div{
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
-#icon-search img{
-    width: 10%;
-    padding:5px;
+#logo img{
+    width: 40%;
+    transition: width .2s linear;
+}
+
+#icon-search{
+    display: inline-block;
+    width: 40%;
+    padding-left: 10%;
+    text-align: right;
+}
+
+#icon-search form{
+    display: inline-block;
+}
+
+#icon-search input{
+    border-radius: 25px !important;
+}
+
+#icon-search .icon{
+    font-size: 1.5em;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 40px;
+    vertical-align: bottom;
+}
+
+#icon-search .icon:hover{
+    background-color: #f00;
+}
+
+/* nav-menu: Seccion en Rojo; donde esta hubicado todo el menu de navegacion */
+
+#nav-menu{
+    padding: 0 10%;
+    background-color: #f00 !important;
+}
+
+#nav-menu a{
+    height: 100%;
+    color: #fff !important;
+    text-align: center;
+}
+
+#nav-menu a:hover{
+    color: #f00 !important;
+    background-color: #fff;
+}
+
+.dropdown-menu, .dropdown-item:hover{
+    background-color: red;
 }
 
 #word{
@@ -53,7 +116,7 @@ a{
 
 #word p{
     padding:10px;
-
+    margin-bottom: 0;
 }
 
 #word p, #info-footer a{
@@ -61,42 +124,7 @@ a{
     color:white;
 }
 
-#icon-search form{
-    display: inline-block;
-}
-
-#icon-search{
-    display: inline-block;
-    width: 40%;
-    padding-left: 10%;
-}
-
-#logo img{
-    width: 40%;
-}
-
-header nav .icon{
-    margin-left: 10%;
-}
-
-header{
-    width: 100%; 
-	left: 0; 
-	top: 0; 
-    position: fixed;
-    z-index: 1;
-}
-
-body{
-    padding-top: 250px;
-    z-index: 0;
-}
-
-.dropdown-menu, .dropdown-item:hover{
-    background-color: red;
-  }
-
-/* footer */
+/* F O O T E R */
 
 footer .icon{
     background-color:white !important;
@@ -161,6 +189,10 @@ footer img{
 
 /* Estandar del diseño general */
 
+body{
+    padding-top: 200px;
+}
+
 main{
     width: 1150px;
     margin: 0 auto;
@@ -183,4 +215,9 @@ main{
     text-align: center;
     text-transform: uppercase;
     color: #212529;
+}
+
+.selectable:hover{
+    opacity: .8;
+    cursor: pointer;
 }

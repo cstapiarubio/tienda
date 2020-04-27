@@ -7,6 +7,7 @@
     <link rel="icon" href="../src/img/cat.jpg">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../src/fontawesome-5.13.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../src/css/main.css">
     <link rel="stylesheet" type="text/css" href="../src/css/form.css">
     <link rel="stylesheet" type="text/css" href="../src/css/login.css">
@@ -19,10 +20,13 @@
 <body>
     <header>
         <div id="contact-div">
-            <div id="icon"><a href=""><img class="icon" src="../src/img/icons/facebook.png"></a><a href=""><img class="icon" src="../src/img/icons/instagram.png"></a></div>
+            <div id="icon">
+                <a href="" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
             <div id="word">
-                <a href="../info/blog.html"><p>Blog</p></a>
-                <a href="../info/how_buy.html"><p>¿Cómo comprar?</p></a>
+                <a href="blog.html"><p>Blog</p></a>
+                <a href="how_buy.html"><p>¿Cómo comprar?</p></a>
                 <a><p>Empresa</p></a>
             </div>
         </div>
@@ -30,8 +34,116 @@
             <div id="logo">
                 <a href="../index.html"><img src="../src/img/logo.gif"></a>
             </div>
+           <div id="icon-search">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 rounded" type="search" placeholder="Buscar" aria-label="Search">
+                </form>
+                <a href="#" class="icon"><i class="fas fa-search"></i></a>
+                <a href="../form/login.html" class="icon" target="_blank"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+           </div>
         </div>
+            
+        <nav id="nav-menu" class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="../index.html"><i class="fas fa-home"></i></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Insumos para comida
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Sushi</a>
+                        <a class="dropdown-item" href="#">Fideos y Pastas</a>
+                        <a class="dropdown-item" href="#">Salsas</a>
+                        <a class="dropdown-item" href="#">Productos Tailandeses</a>
+                        <a class="dropdown-item" href="#">Aceites</a>
+                        <a class="dropdown-item" href="#">Condimentos</a>
+                        <a class="dropdown-item" href="#">Pastas</a>
+                        <a class="dropdown-item" href="#">Sazonadores</a>
+                        <a class="dropdown-item" href="#">Algas</a>
+                        <a class="dropdown-item" href="#">Legumbres</a>
+                        <a class="dropdown-item" href="#">Harinas</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Ramen <span class="sr-only">(current)</span></a>
+                </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dulces y Snacks
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Pockys</a>
+                        <a class="dropdown-item" href="#">Peperos</a>
+                        <a class="dropdown-item" href="#">Mochis</a>
+                        <a class="dropdown-item" href="#">Snacks</a>
+                        <a class="dropdown-item" href="#">Galletas</a>
+                        <a class="dropdown-item" href="#">Caramelos & Chicles</a>
+                        <a class="dropdown-item" href="#">Chocolates & Turrones</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Bebidas y Jugos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Jugos Aloe Vera</a>
+                        <a class="dropdown-item" href="#">Café</a>
+                        <a class="dropdown-item" href="#">Jugos de frutas</a>
+                        <a class="dropdown-item" href="#">Gaseosas</a>
+                        <a class="dropdown-item" href="#">Smoothie</a>
+                        <a class="dropdown-item" href="#">Té & Hierbas</a>
+                        <a class="dropdown-item" href="#">Energizantes</a>
+                        <a class="dropdown-item" href="#">Jugos Arizona</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Té e Infusiones</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Congelados
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Dumplings/Gyozas</a>
+                        <a class="dropdown-item" href="#">Masas & Tortillas</a>
+                        <a class="dropdown-item" href="#">Albóndigas</a>
+                        <a class="dropdown-item" href="#">Pan al Vapor</a>
+                        <a class="dropdown-item" href="#">Verduras congeladas</a>
+                        <a class="dropdown-item" href="#">Insumos de Sushi</a>
+                        <a class="dropdown-item" href="#">Productos vegetarianos</a>
+                        <a class="dropdown-item" href="#">Arrollados</a>
+                        <a class="dropdown-item" href="#">Helados,conos,agua,crema</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos Veggie</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Belleza
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Pomadas para el dolor</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Decoración</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Artículos de cocina</a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
     </header>
+
     <main id="login-main">
         <!-- Login -->
         <form action="" id="login-form" class="container">
