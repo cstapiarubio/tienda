@@ -154,7 +154,6 @@ footer h6{
 }
 
 footer i{
-    margin:5px;
     color:white;
     width: 5%;
 }
@@ -177,6 +176,7 @@ footer i{
 #info-footer h6{
  text-align: center;
  font-weight: bolder;
+ padding: 15px;
 }
 
 /* Estandar del diseño general */
