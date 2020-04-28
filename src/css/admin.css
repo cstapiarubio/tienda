@@ -8,6 +8,12 @@
 .nav-link{
     text-decoration: none !important;
     color: white !important;
+    text-align: center;
+}
+
+.nav-item{
+    text-align: center;
+    margin-top: 40px;
 }
 
 #search-div a{
@@ -28,5 +34,9 @@
 #logo img{
     width:15%;
     padding:10px;
+}
+ 
+i{
+    font-size: 30px;
 }
 
