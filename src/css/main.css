@@ -125,12 +125,6 @@ header{
 }
 
 /* F O O T E R */
-
-footer .icon{
-    background-color:white !important;
-    border-radius: 15px;
-}
-
 .info{
     display:inline-block;
     width:25%;
@@ -146,12 +140,8 @@ footer .icon{
     margin-top: 10px;
 }
 
-footer .icon, header nav .icon{
+header nav .icon{
     width: 5%;
-}
-
-#info-footer h6 img:last-child{
-    width: 2%;
 }
 
 footer{
@@ -163,8 +153,10 @@ footer h6{
     background-color: #343a40;
 }
 
-footer img{
+footer i{
     margin:5px;
+    color:white;
+    width: 5%;
 }
 
 #follow-us{
