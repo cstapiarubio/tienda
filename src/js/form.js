@@ -13,12 +13,30 @@ $(document).ready(function() {
       $input.change();
       return false;
     });
+
+    
+      $(".remove").click(function(){
+        console.log("hola");
+        $(this).remove();
+      });
+
+
   });
 
   $(function(){
     $('#add_sub').on('click',function(){
-        var r= $('<label for="inputNamesub">Nombre subcategoría</label>' +
-        '<input type="text" class="form-control" id="inputNamesub" placeholder="Nombre de subcategoría"></input>');
+        var r= $('<div class="sub"><label for="inputNamesub" class="trash">Nombre subcategoría</label>' +
+        '<input type="text" class="form-control trash" id="inputNamesub" placeholder="Nombre de subcategoría"></input>'+ '<i class="far fa-times-circle remove trash"></i></div>');
         $("#sub").append(r);
     });
+
+
+    $('.new').on('click',function(){
+      console.log("hola");
+      $("#name_category").toggleClass("show");
+    });
+
 });
+
+
+

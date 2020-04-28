@@ -23,3 +23,20 @@ main button{
     margin-left: 500px !important;
 }
 
+.hide{
+    display:none;
+}
+
+.show{
+ display: block;
+}
+
+form{
+    width: 70%;
+}
+
+#inputNamesub{
+    display: inline !important;
+    width: 90% !important;
+}
+

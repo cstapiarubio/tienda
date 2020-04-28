@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Categoría</title>
     <link rel="icon" href="../../src/img/cat.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../src/css/admin.css">
     <link rel="stylesheet" type="text/css" href="../../src/css/form.css">
     <link rel="stylesheet" type="text/css" href="../../src/fontawesome-5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -68,7 +68,7 @@
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Seleccionar categoría</label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Nueva categoría</option>
+                    <option id="new">Nueva categoría</option>
                     <option>Insumos para comida</option>
                     <option>Dulces y Snacks</option>
                     <option>Bebidas y Jugos</option>
@@ -76,12 +76,12 @@
                     <option>Belleza</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div id="name_category" class="form-group hide">
                     <label for="inputName">Nombre categoría</label>
                     <input type="text" class="form-control" id="inputName" placeholder="Ingrese nombre de nueva categoría">
                 </div>
                 <div class="form-group" id="sub"></div>
-                <a class="btn icon-btn btn-success" id="add_sub" href="#"><span class="glyphicon text-success">+</span>Añadir</a>
+                <a class="btn icon-btn btn-success" id="add_sub" href="#"><span class="glyphicon text-success">+</span>Añadir subcategoría</a>
                 <button type="submit" class="btn btn-dark">Guardar</button>
             </form>
         </main>
