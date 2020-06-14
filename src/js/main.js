@@ -6,11 +6,11 @@ $(document).ready(function() {
       $(document).scroll(function() {
         // aca se pregunta si el scroll se movio para abajo.
         if ($(this).scrollTop() > 1) { 
-          $('#logo img').css('width', '20%');
+          $('#logo img').css('width', '100px');
           $('#contact-div').hide();
         }
         if ($(this).scrollTop() < 1) {
-          $('#logo img').css('width', '40%');
+          $('#logo img').css('width', '120px');
           $('#contact-div').show();
         }
       });
