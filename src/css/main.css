@@ -1,8 +1,23 @@
 /* I N I C I A D O R */
+@font-face{
+    font-family: 'font-hero';
+    src: url('../font/Nunito-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'font-titles';
+    src: url('../font/BalooTamma2-Medium.ttf');
+}
+
+@font-face{
+    font-family: 'font-text';
+    src: url('../font/Nunito-Light.ttf');
+}
 
 *{
     margin:0;
     padding:0;
+    font-family: font-text, Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -52,10 +67,24 @@ header{
     padding-bottom: 12px;
 }
 
+#logo a:hover{
+    opacity: .9;
+    text-decoration: none;
+}
+
 #logo img{
     margin: -30px;
     width: 120px;
     transition: width .2s linear;
+}
+
+#logo h2{
+    display: inline-block;
+    margin-left: 10px;
+    font-family: font-hero, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #3a3a3a;
 }
 
 #icon-search{
@@ -156,7 +185,7 @@ footer h6{
 
 footer i{
     color:white;
-    width: 5%;
+    width: auto;
 }
 
 #follow-us{
@@ -174,10 +203,18 @@ footer i{
     opacity: 0.7;
 }
 
+#info-footer h2{  
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-family: font-titles, Arial, Helvetica, sans-serif;
+}
+
 #info-footer h6{
- text-align: center;
- font-weight: bolder;
- padding: 15px;
+    margin-bottom: 0;
+    padding: 15px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Estandar del diseño general */
@@ -194,6 +231,7 @@ main{
 
 .main-section h3{
     font-weight: 700;
+    font-family: font-titles ,Arial, Helvetica, sans-serif;
 }
 
 .main-section hr{

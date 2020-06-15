@@ -2,7 +2,9 @@
 
 main h2{
     color: #1185b8;
+    margin-top: 10px;
     margin-bottom: 20px;
+    font-family: font-hero, Arial, Helvetica, sans-serif;
 }
 
 main p{
