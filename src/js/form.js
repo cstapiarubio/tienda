@@ -14,10 +14,34 @@ $(document).ready(function() {
       return false;
     });
 
-    $('.new').on('click',function(){
+    /*$('option').on('select',function(){
       console.log("hola");
       $("#name_category").remove(".hide");
+      $("#name_category").add(".show");
     });
+
+      $('select').change(function() {
+          if ($(this).val(0)) {
+              $('.hide').removeClass("hide");
+          }
+      });
+
+      $(document).on('click', '.hide',function(){
+        console.log("hola");
+        $(this).parent().hide();
+      });
+
+      $('.new').on('click',function(){
+        $('.hide').removeClass("hide");
+    });
+
+    $("#new").prop("selectedIndex", 0).on('click',function(){
+      $('.hide').removeClass("hide");
+  });*/
+
+  $(('#new option')[0]).on('click',function(){
+    $('.hide').removeClass("hide");
+});
 
 
     $('#add_sub').on('click',function(){
@@ -27,8 +51,8 @@ $(document).ready(function() {
   });
 
     
-    $(document).on('click', '.sub',function(){
-      $(this).remove();
+    $(document).on('click', '.remove',function(){
+      $(this).parent().remove();
     });
       
   });

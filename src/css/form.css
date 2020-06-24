@@ -23,13 +23,7 @@ main button{
     margin-left: 500px !important;
 }
 
-.hide{
-    display:none;
-}
 
-.show{
- display: block;
-}
 
 form{
     width: 70%;
@@ -40,3 +34,15 @@ form{
     width: 90% !important;
 }
 
+.hide{
+    display: none;
+}
+
+/*media queries*/
+
+@media screen and (min-width: 0px) and (max-width: 780px){
+    main button{
+        margin-left: 10px !important;
+        margin-top: 10px;
+    }
+}
