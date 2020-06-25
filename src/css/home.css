@@ -127,3 +127,25 @@
     90.3% {left: 233px; top: 0}
     100% {left: 0}
 }
+
+/*mediaqueries*/
+
+@media screen and (min-width: 0px) and (max-width: 780px){
+    #contact-div, .carousel, #nav-menu .icon, .info:nth-child(2){
+        display: none !important;
+    }
+
+    .info, #search-div, #logo{
+        display:block;
+    }
+
+    #icon-search, #nav-menu{
+        padding-left: 1%;
+        text-align: left;
+    }
+
+    h3, hr{
+        text-align: left;
+        margin-left: 2%;
+    }
+}
