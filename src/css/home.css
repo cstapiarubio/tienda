@@ -135,17 +135,21 @@
         display: none !important;
     }
 
-    .info, #search-div, #logo{
-        display:block;
+    .info, #search-div, #logo, .colection, .product{
+        display:block !important;
     }
 
-    #icon-search, #nav-menu{
+    #icon-search, #nav-menu, #nav-menu a{
         padding-left: 1%;
         text-align: left;
     }
 
-    h3, hr{
+    h3{
         text-align: left;
-        margin-left: 2%;
+        margin-left: 3%;
+    }
+
+    hr{
+        margin-left: 5% !important;
     }
 }
