@@ -252,3 +252,29 @@ main{
     opacity: .8;
     cursor: pointer;
 }
+
+/*mediaqueries*/
+
+@media screen and (min-width: 0px) and (max-width: 780px){
+    #contact-div, .carousel, #nav-menu .icon, .info:nth-child(2){
+        display: none !important;
+    }
+
+    .info, #search-div, #logo, .colection, .product{
+        display:block !important;
+    }
+
+    #icon-search, #nav-menu, #nav-menu a{
+        padding-left: 1%;
+        text-align: left;
+    }
+
+    h3{
+        text-align: left;
+        margin-left: 3%;
+    }
+
+    hr{
+        margin-left: 5% !important;
+    }
+}

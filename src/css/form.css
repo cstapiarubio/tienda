@@ -45,4 +45,16 @@ form{
         margin-left: 10px !important;
         margin-top: 10px;
     }
+
+    #login-main{
+        display:block !important;
+    }
+
+    main{
+        width: auto;
+    }
+
+    #nav-menu{
+        height: 70px;
+    }
 }

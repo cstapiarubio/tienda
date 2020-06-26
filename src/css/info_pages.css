@@ -11,3 +11,9 @@ main p{
     line-height: 40px;
     font-weight: bolder;
 }
+
+@media screen and (min-width: 0px) and (max-width: 780px){
+   main{
+    width: auto;
+   }
+}
